@@ -1,9 +1,9 @@
+// scrollreveal animations
 ScrollReveal().reveal('.hero-text', {
 distance:'100px',
 origin:'left',
 duration:1300
 })
-
 ScrollReveal().reveal('.hero-img', {
 distance:'100px',
 origin:'right',
@@ -14,19 +14,16 @@ distance:'100px',
 origin:'top',
 duration:1300
 })
-
 ScrollReveal().reveal('.card-01', {
 distance:'150px',
 origin:'left',
 duration:1000
 })
-
 ScrollReveal().reveal('.card-02', {
 distance:'150px',
 origin:'left',
 duration:1000
 })
-
 ScrollReveal().reveal('.card-03', {
 distance:'150px',
 origin:'right',
@@ -37,13 +34,11 @@ distance:'150px',
 origin:'right',
 duration:1000
 })
-
 ScrollReveal().reveal('.card-05', {
 distance:'150px',
 origin:'bottom',
 duration:1000
 })
-
 ScrollReveal().reveal('.card-06', {
 distance:'150px',
 origin:'bottom',
@@ -59,3 +54,12 @@ distance:'150px',
 origin:'bottom',
 duration:1000
 })
+
+//  banner image change
+document.getElementById('change-color').onclick = function(){
+    document.getElementById('image-cb').src = './assets/img/cb-red.webp';
+}
+document.getElementById('change-color red').onclick = function(){
+    document.getElementById('image-cb').src = './assets/img/cb-black.png';
+}
+
