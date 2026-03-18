@@ -63,3 +63,18 @@ document.getElementById('change-color red').onclick = function(){
     document.getElementById('image-cb').src = './assets/img/cb-black.png';
 }
 
+const btnElement = document.querySelector('.popup-btn');
+const trailerElement = document.querySelector('.trailer-container');
+const closeButtonElement = document.querySelector('.close-icon');
+const videoElement = document.querySelector('trailer-container video'); 
+
+btnElement.addEventListener('click',()=>{
+    trailerElement.classList.remove('active');
+})
+
+closeButtonElement.addEventListener('click',()=>{
+    trailerElement.classList.add('active');
+    videoElement.pause();
+    videoElement.currentTime = 0;
+});
+
